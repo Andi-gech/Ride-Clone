@@ -4,29 +4,24 @@ Welcome to the RideShare App! This is a real-time, location-based ride-sharing a
 
 ![RideShare App Logo](https://your-image-url.com/logo.png) 
 
+# Ride Share App
+
 ## Screenshots
 
-Here are some screenshots of the app in action:
+### Pick Screen
+![Pick Screen](https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112200_y.jpg)
 
-### 1. **Login Screen**
-![Login Screen](https://your-image-url.com/login.png)
+### Confirm Page
+![Confirm Page](https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112198_y.jpg)
 
-This is the login screen where users can sign in or sign up to start using the app.
+### Home Page
+![Home Page](https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112202_y.jpg)
 
-### 2. **Home Screen**
-![Home Screen](https://github.com/Andi-gech/Ride-Clone/blob/main/readmepics/photo_5981043376646112197_y.jpg)
+### Wallet Page
+![Wallet Page](https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112205_y.jpg)
 
-On the home screen, users can view their current location, search for nearby rides, and book a ride.
-
-### 3. **Driver Screen**
-![Driver Screen](https://your-image-url.com/driver.png)
-
-Drivers can view incoming ride requests, accept or decline them, and track their route on a map.
-
-### 4. **Ride Status Screen**
-![Ride Status](https://your-image-url.com/ridestatus.png)
-
-This screen shows the status of an ongoing ride, including the location of both the rider and the driver.
+### Profile Page
+![Profile Page](https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112203_y.jpg)
 
 ---
 
