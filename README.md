@@ -6,28 +6,28 @@ Welcome to the RideShare App! This is a real-time, location-based ride-sharing a
 
 ## Screenshots
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; flex-direction:row">
-  <div style="flex: 0 0 300px; margin: 10px;">
+<div style="display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 10px;">
+  <div style="flex: 0 0 300px;">
     <h3>Pick Screen</h3>
     <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112200_y.jpg" width="300px" />
   </div>
   
-  <div style="flex: 0 0 300px; margin: 10px;">
+  <div style="flex: 0 0 300px;">
     <h3>Confirm Page</h3>
     <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112198_y.jpg" width="300px" />
   </div>
   
-  <div style="flex: 0 0 300px; margin: 10px;">
+  <div style="flex: 0 0 300px;">
     <h3>Home Page</h3>
     <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112202_y.jpg" width="300px" />
   </div>
   
-  <div style="flex: 0 0 300px; margin: 10px;">
+  <div style="flex: 0 0 300px;">
     <h3>Wallet Page</h3>
     <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112205_y.jpg" width="300px" />
   </div>
   
-  <div style="flex: 0 0 300px; margin: 10px;">
+  <div style="flex: 0 0 300px;">
     <h3>Profile Page</h3>
     <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112203_y.jpg" width="300px" />
   </div>
