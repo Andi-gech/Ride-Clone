@@ -4,7 +4,7 @@ Welcome to the RideShare App! This is a real-time, location-based ride-sharing a
 
 ![RideShare App Logo](https://your-image-url.com/logo.png)
 
-## Screenshots
+## Screenshotsf
 
 <div style="display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 10px;">
   <div style="flex: 0 0 300px;">
