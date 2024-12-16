@@ -2,26 +2,36 @@
 
 Welcome to the RideShare App! This is a real-time, location-based ride-sharing app designed to connect drivers and riders in a seamless and efficient way. The app features a range of real-time functionalities such as driver location tracking, ride matching, notifications, and chat integration.
 
-![RideShare App Logo](https://your-image-url.com/logo.png) 
-
-# Ride Share App
+![RideShare App Logo](https://your-image-url.com/logo.png)
 
 ## Screenshots
 
-### Pick Screen
-![Pick Screen](https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112200_y.jpg)
-
-### Confirm Page
-![Confirm Page](https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112198_y.jpg)
-
-### Home Page
-![Home Page](https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112202_y.jpg)
-
-### Wallet Page
-![Wallet Page](https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112205_y.jpg)
-
-### Profile Page
-![Profile Page](https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112203_y.jpg)
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+  <div style="flex: 1 0 21%; margin: 10px;">
+    <h3>Pick Screen</h3>
+    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112200_y.jpg" width="100%" />
+  </div>
+  
+  <div style="flex: 1 0 21%; margin: 10px;">
+    <h3>Confirm Page</h3>
+    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112198_y.jpg" width="100%" />
+  </div>
+  
+  <div style="flex: 1 0 21%; margin: 10px;">
+    <h3>Home Page</h3>
+    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112202_y.jpg" width="100%" />
+  </div>
+  
+  <div style="flex: 1 0 21%; margin: 10px;">
+    <h3>Wallet Page</h3>
+    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112205_y.jpg" width="100%" />
+  </div>
+  
+  <div style="flex: 1 0 21%; margin: 10px;">
+    <h3>Profile Page</h3>
+    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112203_y.jpg" width="100%" />
+  </div>
+</div>
 
 ---
 
