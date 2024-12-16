@@ -9,12 +9,12 @@ Welcome to the RideShare App! This is a real-time, location-based ride-sharing a
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
   <div style="flex: 1 0 21%; margin: 10px;">
     <h3>Pick Screen</h3>
-    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112200_y.jpg" width="100%" />
+    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112200_y.jpg" width="10%" />
   </div>
   
   <div style="flex: 1 0 21%; margin: 10px;">
     <h3>Confirm Page</h3>
-    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112198_y.jpg" width="100%" />
+    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112198_y.jpg" width="10%" />
   </div>
   
   <div style="flex: 1 0 21%; margin: 10px;">
