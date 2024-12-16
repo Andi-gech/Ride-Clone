@@ -14,7 +14,7 @@ Here are some screenshots of the app in action:
 This is the login screen where users can sign in or sign up to start using the app.
 
 ### 2. **Home Screen**
-![Home Screen](https://your-image-url.com/home.png)
+![Home Screen](https://github.com/Andi-gech/Ride-Clone/blob/main/readmepics/photo_5981043376646112197_y.jpg)
 
 On the home screen, users can view their current location, search for nearby rides, and book a ride.
 
