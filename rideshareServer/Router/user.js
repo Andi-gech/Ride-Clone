@@ -34,9 +34,15 @@ Router.post('/send-otps',async(req,res)=>{
         const saveotp=new OTP({ phone, otp });
         await saveotp.save();
    
+        const appId = process.env.NATIVE_NOTIFY_APP_ID;
+        const appToken = process.env.NATIVE_NOTIFY_APP_TOKEN;
+        if (!appId || !appToken) {
+            return res.status(503).send({ message: 'OTP delivery is not configured.' });
+        }
+
         await axios.post('https://app.nativenotify.com/api/notification', {
-            appId: 20102,
-            appToken: 'kuOxw3Bdzg86CJTpNKc76j',
+            appId: Number(appId),
+            appToken,
             title: 'Your Test Api',
             body: `Your Ride app OTP is ${otp}`,
             dateSent: new Date().toISOString(),
@@ -86,7 +92,11 @@ Router.post('/verify-otp', async (req, res) => {
 
     
 
-            const token = jwt.sign({ _id: user._id }, 'jwtPrivateKey');
+            const jwtSecret = process.env.JWT_SECRET;
+            if (!jwtSecret) {
+                return res.status(503).send({ message: 'Authentication is not configured.' });
+            }
+            const token = jwt.sign({ _id: user._id }, jwtSecret, { expiresIn: '1h' });
             res.send({ token });
         } else {
             res.status(400).send({ message: 'Invalid OTP. Please try again.' });
