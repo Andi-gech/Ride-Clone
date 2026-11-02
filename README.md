@@ -1,57 +1,55 @@
 # RideShare App
 
-Welcome to the RideShare App! This is a real-time, location-based ride-sharing app designed to connect drivers and riders in a seamless and efficient way. The app features a range of real-time functionalities such as driver location tracking, ride matching, notifications, and chat integration.
+A ride-sharing application prototype with a React Native client and a Node.js/Express backend. The backend uses MongoDB and Socket.IO for ride and location-related workflows.
 
+## Screenshots
 
-## Screenshot
+| Pickup | Confirm ride | Home |
+|---|---|---|
+| ![Pickup screen](readmepics/photo_5981043376646112200_y.jpg) | ![Confirm screen](readmepics/photo_5981043376646112198_y.jpg) | ![Home screen](readmepics/photo_5981043376646112202_y.jpg) |
 
-<div style="display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 10px;">
-  <div style="flex: 0 0 300px;">
-    <h3>Pick Screen</h3>
-    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112200_y.jpg" width="300px" />
-  </div>
-  
-  <div style="flex: 0 0 300px;">
-    <h3>Confirm Page</h3>
-    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112198_y.jpg" width="300px" />
-  </div>
-  
-  <div style="flex: 0 0 300px;">
-    <h3>Home Page</h3>
-    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112202_y.jpg" width="300px" />
-  </div>
-  
-  <div style="flex: 0 0 300px;">
-    <h3>Wallet Page</h3>
-    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112205_y.jpg" width="300px" />
-  </div>
-  
-  <div style="flex: 0 0 300px;">
-    <h3>Profile Page</h3>
-    <img src="https://github.com/Andi-gech/Ride-Clone/raw/main/readmepics/photo_5981043376646112203_y.jpg" width="300px" />
-  </div>
-</div>
+## Technology
 
----
+### Mobile application
+- React Native
+- Expo
+- Redux Toolkit
+- React Navigation
+- Expo Location and React Native Maps
+- Socket.IO client
 
-## Features
+### Backend
+- Node.js
+- Express
+- MongoDB and Mongoose
+- Socket.IO
+- JSON Web Tokens
 
-- **Real-time ride matching**: Drivers and riders are matched in real-time based on their location.
-- **Live location updates**: Track your ride and the driver's location on a live map.
+## Repository structure
 
-- **Ride history**: Users can view their previous rides, including ride details and payment information.
+- `app/`: Expo Router screens.
+- `Components/`, `Context/`, and `hooks/`: client components and application logic.
+- `rideshareServer/`: backend API, MongoDB models, routes, and Socket.IO server.
 
----
+## Setup
 
-## Technologies Used
+### Mobile app
 
-- **Frontend**: React Native, Redux, React Navigation
-- **Backend**: Node.js, Express.js, Socket.io
-- **Database**: MongoDB
-- **Realtime Communication**: Socket.io (for live location updates and ride matching)
+```bash
+npm install
+npx expo start
+```
 
-- **Authentication**: JWT (JSON Web Tokens) for secure user authentication
+### Backend
 
----
+```bash
+cd rideshareServer
+npm install
+cp .env.example .env
+```
 
+Set the MongoDB URI, JWT secret, and notification provider credentials in `rideshareServer/.env`. Start the backend with Node.js using the entry point `index.js`.
 
+## Current limitations
+
+This is an in-progress prototype, not a production ride-hailing service. Authentication and authorization need a complete security review. In particular, user and ride routes, Socket.IO event ownership, driver matching, OTP throttling, and location validation must be hardened before real users or payments are involved. Some features described in earlier versions of this README may be incomplete.
