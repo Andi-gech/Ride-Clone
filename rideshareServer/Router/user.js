@@ -1,3 +1,4 @@
+const { randomInt } = require('crypto')
 const express=require('express')
 const mongoose=require('mongoose')
 const axios=require('axios')
@@ -28,7 +29,7 @@ Router.post('/send-otps',async(req,res)=>{
         const {error}=validateuser(req.body)
         if(error) return res.status(400).send(error.details[0].message)
         const phone = req.body.phone;
-        const otp = Math.floor(1000 + Math.random() * 9000).toString(); 
+        const otp = randomInt(1000, 10000).toString(); 
         // Generate a random 4-digit OTP
         const saveotp=new OTP({ phone, otp });
         await saveotp.save();
@@ -56,8 +57,6 @@ Router.post('/verify-otp', async (req, res) => {
 
         // Retrieve OTP from MongoDB
         const storedOTP = await OTP.findOne({phone}).sort({ createdAt: -1 });
-        console.log(phone)
-        console.log(otp)
     
 
         if (!storedOTP) {
@@ -67,14 +66,14 @@ Router.post('/verify-otp', async (req, res) => {
         // Check if OTP has expired
         if (storedOTP.expiresAt < new Date()) {
 
-            await OTP.deleteOne({ phone }); // Remove expired OTP from the database
+            await OTP.deleteOne({ _id: storedOTP._id });
 
             return res.status(400).send({ message: 'OTP has expired. Please request a new OTP.' });
         }
 
-        if (otp === storedOTP.otp) {
+        if (String(otp) === String(storedOTP.otp)) {
             
-            await OTP.deleteOne({ phone });
+            await OTP.deleteOne({ _id: storedOTP._id });
           
             const { error } = validateuser({phone:phone});
             if (error) return res.status(400).send(error.details[0].message);
